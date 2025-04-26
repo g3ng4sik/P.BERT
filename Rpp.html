@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pa_Bert Berbagi - Unduh RPP Resmi</title>
+    <style>
+        /* Gaya umum */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, #4caf50, #2196f3);
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            margin-right: 10px;
+            height: 40px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        /* Menu styling */
+        .menu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .menu li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        .container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .download-link {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: #ff5722;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .download-link:hover {
+            background: #e64a19;
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 40px;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #4caf50;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .greeting {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2196f3;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        // Fungsi untuk menentukan ucapan beserta emoji berdasarkan waktu
+        function getGreeting() {
+            const now = new Date();
+            const hour = now.getHours();
+
+            if (hour >= 5 && hour < 12) {
+                return "🌅 Selamat Pagi, Bosqw!";
+            } else if (hour >= 12 && hour < 18) {
+                return "☀️ Selamat Siang, Bosqw!";
+            } else {
+                return "🌙 Selamat Malam, Bosqw!";
+            }
+        }
+
+        // Mengupdate ucapan di halaman setelah halaman dimuat
+        window.onload = function() {
+            const greetingElement = document.getElementById("greeting");
+            greetingElement.textContent = getGreeting();
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="berto.png" alt="Logo Tuturi Handayani">
+            <h1>PA.BERT BERBAGI</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="Rpp.html">RPP</a></li>
+            <li><a href="buku.html">Unduh Buku</a></li>
+            <li><a href="HHS.html">HHS</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2 class="greeting" id="greeting"></h2>
+        <div class="container">
+            <h1>Unduh RPP Resmi</h1>
+            <p>
+                Dapatkan Rencana Pelaksanaan Pembelajaran (RPP) resmi yang sesuai dengan ketentuan kurikulum terbaru.
+                Klik tombol di bawah untuk mengunduh dokumen RPP dari sumber resmi.
+            </p>
+            <a href="https://www.kemdikbud.go.id/main/blog" class="download-link">Unduh RPP Sekarang</a>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 PA.BERT BERBAGI - Semua Hak Dilindungi</p>
+    </footer>
+</body>
+</html>
